@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Warp Engineering Team</title>
+    <meta name="description" content="Interactive Warp engineering team cards with bios and LinkedIn links.">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="page-header">
+      <div class="main">
+        <h1 class="site-title">Warp Engineering</h1>
+        <p class="site-sub">Hover or tap a card to flip it and see the bio. Click the LinkedIn link to learn more.</p>
+      </div>
+    </header>
+
+    <main id="main" class="main" aria-label="Warp engineering team sections">
+      <!-- Engineering Leadership -->
+      <section class="section" aria-labelledby="leadership-title">
+        <h2 id="leadership-title" class="section-title">Engineering Leadership</h2>
+        <div class="team-grid" data-team="leadership"></div>
+      </section>
+
+      <!-- Code -->
+      <section class="section" aria-labelledby="code-title">
+        <h2 id="code-title" class="section-title">Code</h2>
+        <div class="team-grid" data-team="code"></div>
+      </section>
+
+      <!-- Agents -->
+      <section class="section" aria-labelledby="agents-title">
+        <h2 id="agents-title" class="section-title">Agents</h2>
+        <div class="team-grid" data-team="agents"></div>
+      </section>
+
+      <!-- Revenue -->
+      <section class="section" aria-labelledby="revenue-title">
+        <h2 id="revenue-title" class="section-title">Revenue</h2>
+        <div class="team-grid" data-team="revenue"></div>
+      </section>
+
+      <!-- Quality -->
+      <section class="section" aria-labelledby="quality-title">
+        <h2 id="quality-title" class="section-title">Quality</h2>
+        <div class="team-grid" data-team="quality"></div>
+      </section>
+
+      <!-- Warp 3 -->
+      <section class="section" aria-labelledby="warp3-title">
+        <h2 id="warp3-title" class="section-title">Warp 3</h2>
+        <div class="team-grid" data-team="warp3"></div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="main">
+        <small>Local prototype — static HTML/CSS/JS, no analytics or tracking. © Warp</small>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

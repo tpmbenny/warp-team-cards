@@ -1,0 +1,235 @@
+/*
+  Warp Engineering Team — static prototype
+  - Web-safe font stack similar to Space Grotesk
+  - CSS-only starry background approximation
+  - Responsive grids and 3D flip cards
+*/
+
+:root {
+  --page-bg-1: #0b0f17;
+  --page-bg-2: #090d16;
+  --text: #e8ecf2;
+  --muted: #bec6d4;
+  --link: #8bc6ff;
+
+  --accent-code: #2c6bbb;    /* not used for fronts (they are images), for subtle back accent */
+  --accent-agents: #6f57a7;
+  --accent-revenue: #4c3bbf;
+  --accent-quality: #8a6b1a;
+  --accent-warp3: #2c6bbb;
+  --accent-leadership: #3a9b7a;
+
+  --gap: clamp(12px, 2vw, 22px);
+  --section-max: 1400px;
+  --section-pad: clamp(12px, 3vw, 28px);
+  --col-size: clamp(210px, 16vw, 320px);
+  --card-radius: 14px;
+  --card-shadow: 0 10px 30px rgba(0,0,0,0.35);
+  --flip-ms: 360ms; /* 300–400ms range */
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, Arial, sans-serif;
+  line-height: 1.45;
+  background-color: var(--page-bg-1);
+  /* starry background */
+  background-image:
+    radial-gradient(1200px 800px at 10% 10%, #121a2a 0%, transparent 60%),
+    radial-gradient(1000px 700px at 90% 20%, #0d1421 0%, transparent 60%),
+    radial-gradient(1px 1px at 25px 35px, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(1px 1px at 75px 15px, rgba(255,255,255,0.65) 50%, transparent 51%),
+    radial-gradient(1px 1px at 45px 85px, rgba(255,255,255,0.55) 50%, transparent 51%),
+    radial-gradient(1px 1px at 15px 55px, rgba(255,255,255,0.6) 50%, transparent 51%);
+  background-size:
+    100% 100%,
+    100% 100%,
+    100px 100px,
+    120px 120px,
+    140px 140px,
+    160px 160px;
+  background-repeat: repeat;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+.skip-link:focus {
+  left: 12px;
+  top: 12px;
+  background: #1f283a;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.page-header {
+  padding: 24px 0 8px;
+}
+.site-title {
+  margin: 0;
+  font-size: clamp(22px, 3.2vw, 34px);
+  letter-spacing: 0.5px;
+}
+.site-sub {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: clamp(12px, 1.6vw, 14px);
+}
+
+.main {
+  max-width: var(--section-max);
+  margin-inline: auto;
+  padding-inline: var(--section-pad);
+}
+
+.section { margin: clamp(24px, 4vw, 48px) 0; }
+.section-title {
+  margin: 0 0 12px;
+  font-size: clamp(18px, 2.4vw, 26px);
+}
+
+.team-grid {
+  display: grid;
+  /* Fixed column width across sections for consistent spacing; shrinks to 100% on narrow */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--col-size)), var(--col-size)));
+  gap: var(--gap);
+  justify-content: start;
+}
+
+/* Warp 3: force two fixed-width columns (cards side by side),
+   then collapse to one column on narrow screens */
+.team-grid[data-team="warp3"] {
+  grid-template-columns: repeat(2, minmax(0, var(--col-size)));
+  justify-content: start;
+}
+@media (max-width: 520px) {
+  .team-grid[data-team="warp3"] {
+    grid-template-columns: minmax(0, min(100%, var(--col-size)));
+  }
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* keeps all cards identical height */
+  position: relative;
+  perspective: 1000px;
+  border-radius: var(--card-radius);
+  outline: none;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform var(--flip-ms) ease;
+  will-change: transform;
+}
+
+/* Desktop hover flips */
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .card-inner { transform: rotateY(180deg); }
+}
+
+/* Focus accessibility flips */
+.card:focus-visible .card-inner { transform: rotateY(180deg); }
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  backface-visibility: hidden;
+  box-shadow: var(--card-shadow);
+}
+
+/* New constructed front: avatar + name (large, centered) */
+.card-face.front {
+  background: linear-gradient(180deg, rgba(18,24,36,0.96), rgba(12,16,26,0.96));
+  display: grid;
+  grid-template-rows: 2fr 1fr; /* headshot top 2/3, name bottom 1/3 */
+  place-items: center;
+  padding: clamp(10px, 2vw, 14px);
+}
+/* flatten wrapper so children become grid items */
+.front-content { display: contents; }
+
+.card[data-team="code"] .front { border-top: 3px solid var(--accent-code); }
+.card[data-team="agents"] .front { border-top: 3px solid var(--accent-agents); }
+.card[data-team="revenue"] .front { border-top: 3px solid var(--accent-revenue); }
+.card[data-team="quality"] .front { border-top: 3px solid var(--accent-quality); }
+.card[data-team="warp3"] .front { border-top: 3px solid var(--accent-warp3); }
+.card[data-team="leadership"] .front { border-top: 3px solid var(--accent-leadership); }
+
+.front-avatar {
+  width: 66%; /* ~2/3 of card width */
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.front-name {
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(14px, 2.2vw, 18px);
+  margin-top: 4px;
+}
+ .front-text { display: grid; gap: 2px; }
+
+.card-face.back {
+  transform: rotateY(180deg);
+  background: linear-gradient(180deg, rgba(20,26,40,0.96), rgba(12,16,26,0.96));
+  display: flex;
+  flex-direction: column;
+  padding: clamp(12px, 2.2vw, 18px);
+  gap: 8px;
+}
+
+/* Subtle top border accents by team (back face) */
+.card[data-team="code"] .back { border-top: 3px solid var(--accent-code); }
+.card[data-team="agents"] .back { border-top: 3px solid var(--accent-agents); }
+.card[data-team="revenue"] .back { border-top: 3px solid var(--accent-revenue); }
+.card[data-team="quality"] .back { border-top: 3px solid var(--accent-quality); }
+.card[data-team="warp3"] .back { border-top: 3px solid var(--accent-warp3); }
+.card[data-team="leadership"] .back { border-top: 3px solid var(--accent-leadership); }
+
+.card-back-title {
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 18px);
+}
+/* Ensure consistent link color (visited and unvisited) for name-as-link */
+.card-back-title[href],
+.card-back-title[href]:visited {
+  color: var(--link);
+}
+.card-back-list {
+  margin: 0;
+  padding-left: 18px;
+  list-style: disc;
+  color: var(--muted);
+  display: grid;
+  gap: 6px;
+}
+
+/* Visible focus ring */
+.card:focus-visible {
+  box-shadow: 0 0 0 3px rgba(139, 198, 255, 0.6);
+}
+
+.page-footer {
+  padding: 22px 0 28px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; }
+}
+
