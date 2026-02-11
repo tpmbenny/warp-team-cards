@@ -21,17 +21,19 @@ const TEAM_DATA = [
           "Total Years of Experience: 20+ years",
           "Education: Stanford University (MS Computer Science, BA Philosophy and Religious Studies)"
         ],
+        // LinkedIn profile
         linkedin: "https://www.linkedin.com/in/johnarector/",
         avatar: "assets/avatars/John_Rector.png"
       }
     ]
   },
   {
-    id: "app",
-    title: "App",
+    id: "code",
+    title: "Code",
     members: [
       {
-        slug: "app-aloke-d",
+        slug: "code-aloke-d",
+        frontImage: "assets/fronts/code-aloke-d.png",
         frontShort: "Aloke D",
         fullName: "Aloke Desai",
         bullets: [
@@ -39,23 +41,122 @@ const TEAM_DATA = [
           "Total Years of Experience: 8+ years",
           "Education: Pomona College (BA CS & Mathematical Economics)"
         ],
-        linkedin: "https://www.linkedin.com/in/aloke-desai/",
+        linkedin: "https://www.linkedin.com/in/aloke-desai",
         avatar: "assets/avatars/Aloke_Desai.png"
       },
       {
-        slug: "app-andy-c",
-        frontShort: "Andy C",
-        fullName: "Andrew Carlson",
+        slug: "code-kevin-c",
+        frontImage: "assets/fronts/code-kevin-c.png",
+        frontShort: "Kevin C",
+        fullName: "Kevin Chevalier",
         bullets: [
-          "Previous Companies: Instagram (1+), Onehot Labs (2+), Stem Disintermedia (2+)",
-          "Total Years of Experience: 5+ years",
-          "Education: UC Berkeley (MS Data Science), UCLA (MS Chemistry), UC Riverside (BS Chemistry)"
+          "Previous Companies: Thorn (6), CircleUp (4), Mayo Clinic (2), Curata (4)",
+          "Total Years of Experience: 17+ years",
+          "Education: MIT (MEng CSE, BS CS)"
         ],
-        linkedin: "https://www.linkedin.com/in/acarl005/",
-        avatar: "assets/avatars/Andy_Carlson.png"
+        linkedin: "https://www.linkedin.com/in/kevinchevalier-90b55583",
+        avatar: "assets/avatars/Kevin_Chevalier.png"
       },
       {
-        slug: "app-zach-b",
+        slug: "code-abhi-p",
+        frontImage: "assets/fronts/code-abhi-p.png",
+        frontShort: "Abhi P",
+        fullName: "Abhishek Pandya",
+        bullets: [
+          "First full-time role at Warp",
+          "Previous Internships: Warp and Amazon",
+          "Education: UPenn (MS Data Science, BSE CS)"
+        ],
+        linkedin: "https://www.linkedin.com/in/abhishekanujpandya",
+        avatar: "assets/avatars/Abhishek_Pandya.png"
+      },
+      {
+        slug: "code-kevin-y",
+        frontImage: "assets/fronts/code-kevin-y.png",
+        frontShort: "Kevin Y",
+        fullName: "Kevin Yang",
+        bullets: [
+          "First full-time role at Warp",
+          "Previous Internships: Recruit Co. (2+), LinkedIn",
+          "Education: Minerva Schools at KGI (BS CS)"
+        ],
+        linkedin: "https://www.linkedin.com/in/yunfan-yang-46824b153/",
+        avatar: "assets/avatars/Kevin_Yang.png"
+      },
+      {
+        slug: "code-pei",
+        frontImage: "assets/fronts/code-pei.png",
+        frontShort: "Pei",
+        fullName: "Pei Li",
+        bullets: [
+          "Previous Companies: Vellum (Founding Eng), Venue (Co-Founder YC W23), CodeMode (Founder/CEO), Wealthsimple, Shopify",
+          "Total Years of Experience: 9+ years",
+          "Education: University of Toronto (BASc Engineering Science)"
+        ],
+        linkedin: "https://www.linkedin.com/in/peicodes",
+        avatar: "assets/avatars/Pei_Li.png"
+      },
+      {
+        slug: "code-lucie-l",
+        frontImage: "assets/fronts/code-lucie-l.png",
+        frontShort: "Lucie L",
+        fullName: "Lucie le Blanc",
+        bullets: [
+          "Previous Companies: Kalshi; Internships at Tilt Dev, Reddit, Google, Facebook",
+          "Total Years of Experience: 4+ years",
+          "Education: Columbia University/Barnard College (BS CS)"
+        ],
+        linkedin: "https://www.linkedin.com/in/lucie-leblanc",
+        avatar: "assets/avatars/Lucie_Le_Blanc.png"
+      },
+      {
+        slug: "code-moira-h",
+        frontImage: "assets/fronts/code-moira-h.png",
+        frontShort: "Moira H",
+        fullName: "Moira Huang",
+        bullets: [
+          "Previous Companies: Flatiron Health (3+ years, Sr SWE), AWS (1 year)",
+          "Total Years of Experience: 5+ years",
+          "Education: UC Berkeley (BS CS)"
+        ],
+        linkedin: "https://www.linkedin.com/in/moirahuang",
+        avatar: "assets/avatars/Moira_Huang.png"
+      },
+      {
+        slug: "code-jordan-p",
+        frontImage: "assets/fronts/code-jordan-p.png",
+        frontShort: "Jordan P",
+        fullName: "Jordan Parker",
+        bullets: [
+          "Previous Companies: Pantastic (Head of Eng - 3), Twitter (5+ Sr SWE), Lumatic (Founder)",
+          "Total Years of Experience: 15+ years",
+          "Education: University of Rochester (BS Physics & Electrical Engineering)"
+        ],
+        linkedin: "https://www.linkedin.com/in/jordanparker1",
+        avatar: "assets/avatars/Jordan_Parker.png"
+      }
+    ]
+  },
+  {
+    id: "agents",
+    title: "Agents",
+    members: [
+      {
+        slug: "agents-advait-m",
+        frontImage: "assets/fronts/agents-advait-m.png",
+        frontShort: "Advait M",
+        fullName: "Advait Maybhate",
+        bullets: [
+          "First full-time role at Warp",
+          "Internships: Warp, Ramp, Octant, Instabase, Riot Games, Google (2x), Social Capital, North, Christie Digital (2x)",
+          "Education: UWaterloo (BS CS), Georgia Tech (MS CS - in progress)"
+        ],
+        linkedin: "https://www.linkedin.com/in/advait-m",
+        avatar: "assets/avatars/Advait_Maybhate.png"
+      },
+      {
+        slug: "agents-zach-b",
+        frontImage: "assets/fronts/agents-zach-b.png",
         frontShort: "Zach B",
         fullName: "Zach Bai",
         bullets: [
@@ -63,11 +164,51 @@ const TEAM_DATA = [
           "Total Years of Experience: 6+ years",
           "Education: Harvard University (AB CS)"
         ],
-        linkedin: "https://www.linkedin.com/in/zachbai/",
+        linkedin: "https://www.linkedin.com/in/zachbai",
         avatar: "assets/avatars/Zach_Bai.png"
       },
       {
-        slug: "app-harry-a",
+        slug: "agents-roland-h",
+        frontImage: "assets/fronts/agents-roland-h.png",
+        frontShort: "Roland H",
+        fullName: "Roland Huang",
+        bullets: [
+          "Previous Companies: Nuro (4+ years)",
+          "Total Years of Experience: 6+ years",
+          "Education: Yale University (Combined BS/MS CS)"
+        ],
+        linkedin: "https://www.linkedin.com/in/rolandhuang-128a85107",
+        avatar: "assets/avatars/Roland_Huang.png"
+      },
+      {
+        slug: "agents-ben-h",
+        frontImage: "assets/fronts/agents-ben-h.png",
+        frontShort: "Ben H",
+        fullName: "Ben Holmes",
+        bullets: [
+          "Previous Companies: Astro Inc. (3 years), Peloton (2 years)",
+          "Total Years of Experience: 5+ years",
+          "Education: Georgia Tech (BS CS), University of Mississippi (MBA)"
+        ],
+        linkedin: "https://www.linkedin.com/in/bholmesdev",
+        avatar: "assets/avatars/Benjamin_Holmes.png"
+      },
+      {
+        slug: "agents-david-s",
+        frontImage: "assets/fronts/agents-david-s.png",
+        frontShort: "David S",
+        fullName: "David Stern",
+        bullets: [
+          "Previous Companies: YouTube (Staff SWE - 7), Google (2)",
+          "Total Years of Experience: 12+ years",
+          "Education: Brown University (ScB CS)"
+        ],
+        linkedin: "https://www.linkedin.com/in/davidstern-24b71637",
+        avatar: "assets/avatars/David_Stern.png"
+      },
+      {
+        slug: "agents-harry-a",
+        frontImage: "assets/fronts/agents-harry-a.png",
         frontShort: "Harry A",
         fullName: "Harry Albert",
         bullets: [
@@ -79,79 +220,8 @@ const TEAM_DATA = [
         avatar: "assets/avatars/Harry_Albert.png"
       },
       {
-        slug: "app-kevin-y",
-        frontShort: "Kevin Y",
-        fullName: "Kevin Yang",
-        bullets: [
-          "First full-time role at Warp",
-          "Previous Internships: Recruit Co. (2+), LinkedIn",
-          "Education: Minerva University (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/yunfan-yang-46824b153/",
-        avatar: "assets/avatars/Kevin_Yang.png"
-      },
-      {
-        slug: "app-moira-h",
-        frontShort: "Moira H",
-        fullName: "Moira Huang",
-        bullets: [
-          "Previous Companies: Flatiron Health (3+ years, Sr SWE), AWS (1 year)",
-          "Total Years of Experience: 5+ years",
-          "Education: UC Berkeley (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/moirahuang/",
-        avatar: "assets/avatars/Moira_Huang.png"
-      },
-      {
-        slug: "app-roland-h",
-        frontShort: "Roland H",
-        fullName: "Roland Huang",
-        bullets: [
-          "Previous Companies: Nuro (4+ years)",
-          "Total Years of Experience: 6+ years",
-          "Education: Yale University (Combined BS/MS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/roland-huang-128a85107/",
-        avatar: "assets/avatars/Roland_Huang.png"
-      },
-      {
-        slug: "app-advait-m",
-        frontShort: "Advait M",
-        fullName: "Advait Maybhate",
-        bullets: [
-          "First full-time role at Warp",
-          "Internships: Warp, Ramp, Octant, Instabase, Riot Games, Google (2x), Social Capital, North, Christie Digital (2x)",
-          "Education: UWaterloo (BS CS), Georgia Tech (MS CS - in progress)"
-        ],
-        linkedin: "https://www.linkedin.com/in/advait-m/",
-        avatar: "assets/avatars/Advait_Maybhate.png"
-      },
-      {
-        slug: "app-kevin-c",
-        frontShort: "Kevin C",
-        fullName: "Kevin Chevalier",
-        bullets: [
-          "Previous Companies: Thorn (6), CircleUp (4), Mayo Clinic (2), Curata (4)",
-          "Total Years of Experience: 17+ years",
-          "Education: MIT (MEng CSE, BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/kevin-chevalier-90b55583/",
-        avatar: "assets/avatars/Kevin_Chevalier.png"
-      },
-      {
-        slug: "app-pei",
-        frontShort: "Pei",
-        fullName: "Pei Li",
-        bullets: [
-          "Previous Companies: Vellum (Founding Eng), Venue (Co-Founder YC W23), CodeMode (Founder/CEO), Wealthsimple, Shopify",
-          "Total Years of Experience: 9+ years",
-          "Education: University of Toronto (BASc Engineering Science)"
-        ],
-        linkedin: "https://www.linkedin.com/in/peicodes/",
-        avatar: "assets/avatars/Pei_Li.png"
-      },
-      {
-        slug: "app-maggie-s",
+        slug: "agents-maggie-s",
+        frontImage: "assets/fronts/agents-maggie-s.png",
         frontShort: "Maggie S",
         fullName: "Maggie Shan",
         bullets: [
@@ -159,44 +229,8 @@ const TEAM_DATA = [
           "Total Years of Experience: 2+ years",
           "Education: UWaterloo (Honours BCS), Wilfrid Laurier (BBA)"
         ],
-        linkedin: "https://www.linkedin.com/in/maggieshan/",
+        linkedin: "https://www.linkedin.com/in/maggieshan",
         avatar: "assets/avatars/Maggie_Shan.png"
-      },
-      {
-        slug: "app-lucie-l",
-        frontShort: "Lucie L",
-        fullName: "Lucie Le Blanc",
-        bullets: [
-          "Previous Companies: Kalshi; Internships at Tilt Dev, Reddit, Google, Facebook",
-          "Total Years of Experience: 4+ years",
-          "Education: Columbia University/Barnard College (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/lucie-leblanc/",
-        avatar: "assets/avatars/Lucie_Le_Blanc.png"
-      },
-      {
-        slug: "app-david-s",
-        frontShort: "David S",
-        fullName: "David Stern",
-        bullets: [
-          "Previous Companies: YouTube (Staff SWE - 7), Google (2)",
-          "Total Years of Experience: 12+ years",
-          "Education: Brown University (ScB CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/david-stern-24b71637/",
-        avatar: "assets/avatars/David_Stern.png"
-      },
-      {
-        slug: "app-varoon-k",
-        frontShort: "Varoon K",
-        fullName: "Varoon Kodithala",
-        bullets: [
-          "Started as intern at Warp; previously interned at Censys",
-          "Notable: Built Warp's first-class code editor as an intern",
-          "Education: Georgia Tech (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/vkodithala/",
-        avatar: "assets/avatars/Varoon_Kodithala.png"
       }
     ]
   },
@@ -206,6 +240,7 @@ const TEAM_DATA = [
     members: [
       {
         slug: "revenue-jeff-l",
+        frontImage: "assets/fronts/revenue-jeff-l.png",
         frontShort: "Jeff L",
         fullName: "Jeff Lloyd",
         bullets: [
@@ -217,19 +252,21 @@ const TEAM_DATA = [
         avatar: "assets/avatars/Jeff_Lloyd.png"
       },
       {
-        slug: "revenue-isaiah-w",
-        frontShort: "Isaiah W",
-        fullName: "Isaiah Witzke",
+        slug: "revenue-andrew-s",
+        frontImage: "assets/fronts/revenue-andrew-s.png",
+        frontShort: "Andrew S",
+        fullName: "Andrew Sweet",
         bullets: [
-          "Previous Companies: Carta (Software Engineer 2)",
-          "Total Years of Experience: 4+ years",
-          "Education: TBD"
+          "Previous Companies: dbt Labs (3+), Google (3), Nike (1+)",
+          "Total Years of Experience: 9+ years",
+          "Education: Carnegie Mellon University (Bachelor of Computer Science and Art)"
         ],
-        linkedin: "https://www.linkedin.com/in/isaiah-witzke-4990a6175/",
-        avatar: "assets/avatars/Isaiah_Witzke.png"
+        linkedin: "https://www.linkedin.com/in/andrewmsweet",
+        avatar: "assets/avatars/Andrew_Sweet.png"
       },
       {
         slug: "revenue-tyler-l",
+        frontImage: "assets/fronts/revenue-tyler-l.png",
         frontShort: "Tyler L",
         fullName: "Tyler Lam",
         bullets: [
@@ -237,8 +274,21 @@ const TEAM_DATA = [
           "Total Years of Experience: 2+ years",
           "Education: University of Calgary (BSc Software Engineering)"
         ],
-        linkedin: "https://www.linkedin.com/in/tylerwlam/",
+        linkedin: "https://www.linkedin.com/in/tylerwlam",
         avatar: "assets/avatars/Tyler_Lam.png"
+      },
+      {
+        slug: "revenue-andy-c",
+        frontImage: "assets/fronts/revenue-andy-c.png",
+        frontShort: "Andy C",
+        fullName: "Andrew Carlson",
+        bullets: [
+          "Previous Companies: Instagram (1+), Onehot Labs (2+), Stem Disintermedia (2+)",
+          "Total Years of Experience: 5+ years",
+          "Education: UC Berkeley (MS Data Science), UCLA (MS Chemistry), UC Riverside (BS Chemistry)"
+        ],
+        linkedin: "https://www.linkedin.com/in/acarl005",
+        avatar: "assets/avatars/Andy_Carlson.png"
       }
     ]
   },
@@ -248,6 +298,7 @@ const TEAM_DATA = [
     members: [
       {
         slug: "quality-suraj-g",
+        frontImage: "assets/fronts/quality-suraj-g.png",
         frontShort: "Suraj G",
         fullName: "Suraj Gupta",
         bullets: [
@@ -255,11 +306,12 @@ const TEAM_DATA = [
           "Internships: Snowflake, Wish, OpsLevel, Gluskin Sheff, PureFacts Financial",
           "Education: University of Waterloo (Honours BCS)"
         ],
-        linkedin: "https://www.linkedin.com/in/szgupta/",
+        linkedin: "https://www.linkedin.com/in/szgupta",
         avatar: "assets/avatars/Suraj_Gupta.png"
       },
       {
         slug: "quality-daniel-p",
+        frontImage: "assets/fronts/quality-daniel-p.png",
         frontShort: "Daniel P",
         fullName: "Daniel Peng",
         bullets: [
@@ -267,11 +319,12 @@ const TEAM_DATA = [
           "Total Years of Experience: 2+ years",
           "Education: University of Waterloo (BS CS)"
         ],
-        linkedin: "https://www.linkedin.com/in/daniel-peng/",
+        linkedin: "https://www.linkedin.com/in/daniel-peng",
         avatar: "assets/avatars/Daniel_Peng.png"
       },
       {
         slug: "quality-matt-a",
+        frontImage: "assets/fronts/quality-matt-a.png",
         frontShort: "Matt A",
         fullName: "Matthew Albright",
         bullets: [
@@ -279,77 +332,12 @@ const TEAM_DATA = [
           "Total Years of Experience: 21+ years",
           "Education: Penn State (BS Computer Engineering)"
         ],
-        linkedin: "https://www.linkedin.com/in/matthew-albright-11077b1/",
+        linkedin: "https://www.linkedin.com/in/matthewalbright-11077b1",
         avatar: "assets/avatars/Matthew_Albright.png"
       },
       {
-        slug: "quality-leon-f",
-        frontShort: "Leon F",
-        fullName: "Leon Fattakhov",
-        bullets: [
-          "Previous Companies: Amazon (Software Development Engineer)",
-          "Total Years of Experience: 4+ years",
-          "Education: University of Waterloo (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/leon-fattakhov/",
-        avatar: "assets/avatars/Leon_Fattakhov.png"
-      }
-    ]
-  },
-  {
-    id: "platform",
-    title: "Platform",
-    members: [
-      {
-        slug: "platform-ben-n",
-        frontShort: "Ben N",
-        fullName: "Benjamin Navetta",
-        bullets: [
-          "Previous Companies: Twitter (3+ years)",
-          "Total Years of Experience: 6+ years",
-          "Education: Brown University (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/benjaminnavetta/",
-        avatar: "assets/avatars/Benjamin_Navetta.png"
-      },
-      {
-        slug: "platform-ian-h",
-        frontShort: "Ian H",
-        fullName: "Ian Hodge",
-        bullets: [
-          "Previous Companies: Meta (2 years)",
-          "Total Years of Experience: 5+ years",
-          "Education: Stanford University (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/ian-hodge-4876aa117/",
-        avatar: "assets/avatars/Ian_Hodge.png"
-      },
-      {
-        slug: "platform-katarina-j",
-        frontShort: "Katarina J",
-        fullName: "Katarina Jankov",
-        bullets: [
-          "Previous Companies: Stripe (Software Engineer)",
-          "Total Years of Experience: 5+ years",
-          "Education: Cornell University (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/kjankov/",
-        avatar: "assets/avatars/Katarina_Jankov.png"
-      },
-      {
-        slug: "platform-safia-a",
-        frontShort: "Safia A",
-        fullName: "Safia Abdalla",
-        bullets: [
-          "Previous Companies: Microsoft (Principal SWE — ASP.NET Core, .NET Aspire)",
-          "Notable: Major open source contributor (nteract, Jupyter ecosystem)",
-          "Education: Northwestern University (BS CS)"
-        ],
-        linkedin: "https://www.linkedin.com/in/safiaabdalla/",
-        avatar: "assets/avatars/Safia_Abdalla.png"
-      },
-      {
-        slug: "platform-lili",
+        slug: "quality-lili",
+        frontImage: "assets/fronts/quality-lili.png",
         frontShort: "Lili",
         fullName: "Lili Wilson",
         bullets: [
@@ -357,32 +345,40 @@ const TEAM_DATA = [
           "Internships: Warp, Vividly; MIT CSAIL + Brain & Cognitive Sciences research",
           "Education: MIT (BS Computer Science)"
         ],
-        linkedin: "https://www.linkedin.com/in/lili-m-wilson/",
+        linkedin: "https://www.linkedin.com/in/lili-m-wilson",
         avatar: "assets/avatars/Lili_Wilson.png"
-      },
+      }
+    ]
+  },
+  {
+    id: "warp3",
+    title: "Warp 3",
+    members: [
       {
-        slug: "platform-abhi-p",
-        frontShort: "Abhi P",
-        fullName: "Abhishek Pandya",
+        slug: "warp3-ben-n",
+        frontImage: "assets/fronts/warp3-ben-n.png",
+        frontShort: "Ben N",
+        fullName: "Benjamin Navetta",
         bullets: [
-          "First full-time role at Warp",
-          "Previous Internships: Warp and Amazon",
-          "Education: UPenn (MS Data Science, BSE CS)"
+          "Previous Companies: Twitter (3+ years)",
+          "Total Years of Experience: 6+ years",
+          "Education: Brown University (BS CS)"
         ],
-        linkedin: "https://www.linkedin.com/in/abhishekanujpandya/",
-        avatar: "assets/avatars/Abhishek_Pandya.png"
+        linkedin: "https://www.linkedin.com/in/benjaminnavetta",
+        avatar: "assets/avatars/Benjamin_Navetta.png"
       },
       {
-        slug: "platform-ben-s",
-        frontShort: "Ben S",
-        fullName: "Ben Stobaugh",
+        slug: "warp3-ian-h",
+        frontImage: "assets/fronts/warp3-ian-h.png",
+        frontShort: "Ian H",
+        fullName: "Ian Hodge",
         bullets: [
-          "Previous Companies: Abnormal AI (Senior SWE)",
+          "Previous Companies: Meta (2 years)",
           "Total Years of Experience: 5+ years",
-          "Education: University of Texas at Austin (BS CS)"
+          "Education: Stanford University (BS CS)"
         ],
-        linkedin: "https://www.linkedin.com/in/benstobaugh/",
-        avatar: "assets/avatars/Ben_Stobaugh.png"
+        linkedin: "https://www.linkedin.com/in/ianhodge-4876aa117",
+        avatar: "assets/avatars/Ian_Hodge.png"
       }
     ]
   }
